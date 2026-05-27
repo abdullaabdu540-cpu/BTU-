@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTU Wellness Guide | Complete Hair & Scalp Health</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ============================================
+           BTU WELLNESS GUIDE - DARK IVORY + GENTLE BLUE
+           Premium, Calming, Trustworthy Aesthetic
+           ============================================ */
+        
+        :root {
+            /* DARK IVORY PALETTE */
+            --dark-ivory: #E8DCC4;
+            --ivory-dark: #D4C5A9;
+            --ivory-medium: #F0E6D2;
+            --ivory-light: #F7F0E6;
+            
+            /* GENTLE BLUE PALETTE */
+            --gentle-blue: #A8C5D6;
+            --blue-medium: #8BAAC4;
+            --blue-dark: #6B8FA8;
+            --blue-light: #D4E4ED;
+            
+            /* ACCENT COLORS */
+            --charcoal: #2C2C2C;
+            --soft-gray: #6B7280;
+            --white: #FFFFFF;
+            --gold-accent: #C9A961;
+            
+            /* SUCCESS/WARNING */
+            --success-green: #6B9F7C;
+            --warning-amber: #D4A574;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, var(--ivory-light) 0%, var(--ivory-medium) 100%);
+            color: var(--charcoal);
+            line-height: 1.8;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--blue-dark);
+        }
+        
+        /* HEADER WITH BTU LOGO */
+        header {
+            background: linear-gradient(135deg, var(--blue-dark), var(--blue-medium));
+            padding: 50px 20px;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+            background-size: 30px 30px;
+            opacity: 0.3;
+        }
+        
+        .logo {
+            font-size: 3.5em;
+            font-weight: 900;
+            letter-spacing: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .tagline {
+            font-size: 1.3em;
+            position: relative;
+            z-index: 2;
+            opacity: 0.95;
+        }
+        
+        .scanned-badge {
+            background: var(--dark-ivory);
+            color: var(--blue-dark);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 0.9em;
+            font-weight: 700;
+            margin-top: 20px;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* WELCOME SECTION */
+        .welcome {
+            background: var(--white);
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--gentle-blue);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .welcome h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: var(--blue-dark);
+        }
+        
+        .welcome p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 15px;
+            color: var(--soft-gray);
+        }
+        
+        .welcome-emoji {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        
+        /* NAVIGATION TABS */
+        .tabs {
+            display: flex;
+            overflow-x: auto;
+            background: var(--white);
+            padding: 20px;
+            gap: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+        
+        .tab {
+            padding: 12px 20px;
+            background: var(--ivory-light);
+            border: 2px solid var(--gentle-blue);
+            border-radius: 30px;
+            text-decoration: none;
+            color: var(--blue-dark);
+            font-weight: 600;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+        }
+        
+        .tab:hover, .tab.active {
+            background: var(--gentle-blue);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(168, 197, 214, 0.4);
+        }
+        
+        /* CONTENT SECTIONS */
+        section {
+            padding: 70px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2.8em;
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--blue-dark);
+        }
+        
+        .section-tag {
+            display: inline-block;
+            background: var(--gentle-blue);
+            color: var(--white);
+            padding: 10px 28px;
+            border-radius: 30px;
+            font-size: 0.9em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        /* INFO CARDS */
+        .info-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            border-left: 6px solid var(--gentle-blue);
+            transition: transform 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        }
+        
+        .info-card h3 {
+            font-size: 1.9em;
+            margin-bottom: 18px;
+            color: var(--blue-dark);
+        }
+        
+        .info-card p {
+            font-size: 1.15em;
+            line-height: 1.9;
+            color: var(--soft-gray);
+        }
+        
+        .info-card ul {
+            margin-left: 25px;
+            margin-top: 15px;
+            color: var(--soft-gray);
+        }
+        
+        .info-card li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        
+        /* STATS BOXES */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, var(--gentle-blue), var(--blue-medium));
+            color: var(--white);
+            padding: 35px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(168, 197, 214, 0.4);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-box:hover {
+            transform: translateY(-8px);
+        }
+        
+        .stat-number {
+            font-size: 3.2em;
+            font-weight: 900;
+            color: var(--dark-ivory);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .stat-label {
+            font-size: 1em;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+        
+        /* INGREDIENT CARDS */
+        .ingredient-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 22px;
+            margin: 50px 0;
+        }
+        
+        .ingredient-card {
+            background: var(--white);
+            border-radius: 18px;
+            padding: 28px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            border-top: 4px solid var(--gentle-blue);
+            transition: all 0.3s ease;
+        }
+        
+        .ingredient-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+        
+        .ingredient-card h4 {
+            font-size: 1.5em;
+            color: var(--blue-dark);
+            margin-bottom: 12px;
+        }
+        
+        .ingredient-card p {
+            color: var(--soft-gray);
+            font-size: 1.05em;
+        }
+        
+        .ingredient-card .benefit {
+            color: var(--success-green);
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* CHECKLIST */
+        .checklist {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 35px;
+            margin: 40px 0;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+        
+        .checklist h3 {
+            margin-bottom: 25px;
+            color: var(--blue-dark);
+        }
+        
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            padding: 18px;
+            border-bottom: 1px solid var(--ivory-medium);
+            transition: background 0.3s ease;
+            border-radius: 10px;
+        }
+        
+        .checklist-item:hover {
+            background: var(--ivory-light);
+        }
+        
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+        
+        .checklist-item input[type="checkbox"] {
+            width: 26px;
+            height: 26px;
+            margin-right: 18px;
+            accent-color: var(--gentle-blue);
+            cursor: pointer;
+        }
+        
+        .checklist-item label {
+            font-size: 1.15em;
+            cursor: pointer;
+            color: var(--soft-gray);
+            flex: 1;
+        }
+        
+        .checklist-item input:checked + label {
+            color: var(--success-green);
+            text-decoration: line-through;
+            text-decoration-color: var(--success-green);
+        }
+        
+        /* TIMELINE */
+        .timeline {
+            position: relative;
+            margin: 50px 0;
+        }
+        
+        .timeline-item {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 18px;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--gentle-blue);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .timeline-item:hover {
+            transform: translateX(5px);
+        }
+        
+        .timeline-month {
+            background: var(--gentle-blue);
+            color: var(--white);
+            padding: 10px 22px;
+            border-radius: 25px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 12px;
+            font-size: 1em;
+        }
+        
+        /* FOOD PLAN */
+        .food-plan {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 35px;
+            margin: 40px 0;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+        
+        .food-plan h3 {
+            margin-bottom: 25px;
+            color: var(--blue-dark);
+        }
+        
+        .meal-card {
+            background: linear-gradient(135deg, var(--ivory-light), var(--ivory-medium));
+            padding: 25px;
+            border-radius: 18px;
+            margin: 25px 0;
+            border-left: 4px solid var(--gentle-blue);
+        }
+        
+        .meal-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--blue-dark);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .meal-items {
+            list-style: none;
+        }
+        
+        .meal-items li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--ivory-dark);
+            color: var(--soft-gray);
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .meal-items li:last-child {
+            border-bottom: none;
+        }
+        
+        .meal-items li:before {
+            content: '✓';
+            color: var(--success-green);
+            font-weight: 900;
+            font-size: 1.3em;
+        }
+        
+        /* CAUTION BOXES */
+        .caution-box {
+            background: linear-gradient(135deg, #FFF8F0, #FFF3E0);
+            border-left: 6px solid var(--warning-amber);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            box-shadow: 0 5px 20px rgba(212, 165, 116, 0.2);
+        }
+        
+        .caution-box h4 {
+            color: #8B6F47;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .caution-box ul {
+            margin-left: 25px;
+            color: var(--soft-gray);
+        }
+        
+        .caution-box li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        
+        /* SUCCESS BOXES */
+        .success-box {
+            background: linear-gradient(135deg, #E8F5E9, #C8E6C9);
+            border-left: 6px solid var(--success-green);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            box-shadow: 0 5px 20px rgba(107, 159, 124, 0.2);
+        }
+        
+        .success-box h4 {
+            color: #2E7D32;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .success-box p {
+            color: var(--soft-gray);
+            font-size: 1.1em;
+        }
+        
+        /* CTA BUTTON */
+        .cta-button {
+            display: inline-block;
+            padding: 22px 55px;
+            background: linear-gradient(135deg, var(--gentle-blue), var(--blue-medium));
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: 700;
+            border-radius: 60px;
+            margin: 40px 0;
+            box-shadow: 0 12px 35px rgba(168, 197, 214, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 45px rgba(168, 197, 214, 0.7);
+        }
+        
+        /* FOOTER */
+        footer {
+            background: linear-gradient(135deg, var(--blue-dark), var(--blue-medium));
+            color: var(--white);
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        footer h3 {
+            color: var(--dark-ivory);
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            margin: 25px 0;
+        }
+        
+        .contact-info a {
+            color: var(--dark-ivory);
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.8em;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+        
+        .contact-info a:hover {
+            transform: scale(1.2);
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .logo { font-size: 2.5em; }
+            .section-title { font-size: 2.2em; }
+            .tabs { padding: 15px 12px; }
+            .tab { padding: 10px 16px; font-size: 0.85em; }
+            section { padding: 50px 15px; }
+            .info-card { padding: 25px; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+        }
+        
+        @media (max-width: 480px) {
+            .logo { font-size: 2em; }
+            .welcome h1 { font-size: 2em; }
+            .section-title { font-size: 1.8em; }
+            .stats-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">BTU</div>
+        <p class="tagline">Premium Scalp Care Serum</p>
+        <p style="margin-top: 10px; font-size: 0.95em; position: relative; z-index: 2;">11 Clinical + Ayurvedic Actives</p>
+        <div class="scanned-badge">
+            <i class="fas fa-check-circle"></i> QR Code Scanned Successfully
+        </div>
+    </header>
+
+    <!-- WELCOME SECTION -->
+    <div class="welcome">
+        <div class="welcome-emoji">🌟</div>
+        <h1>Welcome to Your Hair Transformation</h1>
+        <p><strong>Thank you for choosing BTU Scalp Care Serum.</strong></p>
+        <p>You've invested in scientifically-proven ingredients that deliver real results.</p>
+        <p>This complete wellness guide includes food plans, sleep optimization, stress management, and daily routines to maximize your hair growth.</p>
+        <div style="font-size: 1.3em; color: var(--blue-dark); font-weight: 700; margin-top: 25px;">
+            🎉 You're on your way to healthier, thicker hair!
+        </div>
+    </div>
+
+    <!-- NAVIGATION TABS -->
+    <div class="tabs">
+        <a href="#scalp" class="tab">🧬 Scalp Science</a>
+        <a href="#ingredients" class="tab">✨ Ingredients</a>
+        <a href="#food" class="tab">🍎 Food Plan</a>
+        <a href="#routine" class="tab">⏰ Routine</a>
+        <a href="#timeline" class="tab">📅 Results</a>
+        <a href="#sleep" class="tab">😴 Sleep</a>
+        <a href="#stress" class="tab">🧘 Stress</a>
+        <a href="#hardwater" class="tab">💧 Water</a>
+    </div>
+
+    <!-- SECTION 1: SCALP SCIENCE -->
+    <section id="scalp">
+        <span class="section-tag">Part 1</span>
+        <h2 class="section-title">Understanding Your Scalp</h2>
+        
+        <div class="info-card">
+            <h3>🧬 Your Scalp Has 100,000 Hair Follicles</h3>
+            <p>Each follicle is a <strong>mini organ</strong> with its own blood supply, nerves, and sebaceous glands.</p>
+            <ul>
+                <li>Produces 15-30g of sebum (oil) daily</li>
+                <li>Hair grows 1-1.5cm per month</li>
+                <li>85-90% of hair in growth phase at any time</li>
+            </ul>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-number">100K</div>
+                <div class="stat-label">Hair Follicles</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">1-1.5cm</div>
+                <div class="stat-label">Monthly Growth</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">3-5 yrs</div>
+                <div class="stat-label">Growth Phase</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">50-100</div>
+                <div class="stat-label">Normal Shedding/Day</div>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <h3>🔬 What is DHT?</h3>
+            <p><strong>Dihydrotestosterone (DHT)</strong> is 5x more potent than testosterone. It's the #1 cause of pattern hair loss.</p>
+            <h4 style="margin-top: 20px; font-size: 1.2em;">How DHT Damages Hair:</h4>
+            <ul>
+                <li>Shrinks hair follicles (miniaturization)</li>
+                <li>Shortens growth phase from 5 years → weeks</li>
+                <li>Thins hair with each growth cycle</li>
+                <li>Eventually stops producing visible hair</li>
+            </ul>
+            <div class="success-box">
+                <h4>✅ BTU Blocks DHT 3 Ways:</h4>
+                <p>🛡️ <strong>Capixyl™</strong> - 50% DHT reduction<br>
+                ☕ <strong>Caffeine</strong> - 40% DHT reduction<br>
+                🌿 <strong>Rosemary</strong> - Natural DHT blocker (equals 2% Minoxidil)</p>
+            </div>
+        </div>
+
+        <div class="caution-box">
+            <h4>⚠️ Top 5 Hair Loss Causes:</h4>
+            <ul>
+                <li><strong>Hard Water:</strong> Bengaluru = 300-400 ppm (very hard) → mineral buildup blocks follicles</li>
+                <li><strong>Stress:</strong> 90% of hair loss = stress-related (cortisol↑ constricts blood vessels)</li>
+                <li><strong>Poor Sleep:</strong> <7 hours = 40% higher hair loss risk (growth hormone released only in deep sleep)</li>
+                <li><strong>Nutrient Deficiency:</strong> Iron, Vitamin D, B12, Zinc critical for hair</li>
+                <li><strong>Sugar/Processed Food:</strong> Increases DHT by 30%, causes inflammation</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECTION 2: INGREDIENTS -->
+    <section id="ingredients">
+        <span class="section-tag">Part 2</span>
+        <h2 class="section-title">Your 11 Powerful Actives</h2>
+        <p style="text-align: center; color: var(--soft-gray); font-size: 1.2em; margin-bottom: 30px;">
+            6 Scientific + 5 Ayurvedic = Perfect Hair Growth Formula
+        </p>
+
+        <div class="ingredient-grid">
+            <div class="ingredient-card">
+                <h4>Redensyl® 3%</h4>
+                <p>Activates hair follicle stem cells</p>
+                <div class="benefit">📈 145% hair growth increase</div>
+            </div>
+            <div class="ingredient-card">
+                <h4>Capixyl™ 2%</h4>
+                <p>Natural DHT blocker peptide</p>
+                <div class="benefit">🛡️ 50% DHT reduction</div>
+            </div>
+            <div class="ingredient-card">
+                <h4>Caffeine 0.5%</h4>
+                <p>Extends hair growth phase</p>
+                <div class="benefit">⏱️ 5+ years growth phase</div>
+            </div>
+            <div class="ingredient-card">
+                <h4>Niacinamide 2%</h4>
+                <p>Repairs scalp barrier</p>
+                <div class="benefit">💧 67% better hydration</div>
+            </div>
+            <div class="ingredient-card">
+                <h4>Panthenol 2%</h4>
+                <p>Thickens hair shaft</p>
+                <div class="benefit">📏 15% thicker strands</div>
+            </div>
+            <div class="ingredient-card">
+                <h4>Phytic Acid 0.5%</h4>
+                <p>Removes hard water buildup</p>
+                <div class="benefit">🚿 Critical for Bengaluru</div>
+            </div>
+            <div class="ingredient-card">
+                <h4>Rosemary Extract</h4>
+                <p>Natural Minoxidil alternative</p>
+                <div class="benefit">🌿 = 2% Minoxidil</div>
+            </div>
+            <div class="ingredient-card">
+                <h4>Ashwagandha</h4>
+                <p>Stress & cortisol reducer</p>
+                <div class="benefit">🧘 27.9% cortisol ↓</div>
+            </div>
+            <div class="ingredient-card">
+                <h4>Amla (Indian Gooseberry)</h4>
+                <p>Vitamin C + collagen support</p>
+                <div class="benefit">🍊 30x more Vit C than orange</div>
+            </div>
+            <div class="ingredient-card">
+                <h4>Jatamansi</h4>
+                <p>Calms inflamed scalp</p>
+                <div class="benefit">🌿 Pitta balancing</div>
+            </div>
+            <div class="ingredient-card">
+                <h4>Licorice</h4>
+                <p>Soothes irritated skin</p>
+                <div class="benefit">✨ 70% reduces itching</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: FOOD PLAN -->
+    <section id="food">
+        <span class="section-tag">Part 3</span>
+        <h2 class="section-title">Daily Food Plan for Hair Growth</h2>
+        
+        <div class="success-box">
+            <h4>🎯 Key Nutrients for Hair:</h4>
+            <p><strong>Iron</strong> (ferritin >50) | <strong>Vitamin D</strong> (600-800 IU) | <strong>Vitamin B12</strong> | <strong>Zinc</strong> | <strong>Biotin</strong> | <strong>Protein</strong> | <strong>Omega-3</strong></p>
+        </div>
+
+        <div class="food-plan">
+            <h3>🌅 BREAKFAST (7-8 AM)</h3>
+            <div class="meal-card">
+                <div class="meal-title"><i class="fas fa-egg"></i> Protein + Healthy Fats</div>
+                <ul class="meal-items">
+                    <li>2-3 Eggs (whole) + Spinach</li>
+                    <li>1 Sweet Potato (medium)</li>
+                    <li>1 Glass milk (or almond milk)</li>
+                    <li>5-6 Almonds</li>
+                </ul>
+            </div>
+
+            <h3>☀️ LUNCH (12-1 PM)</h3>
+            <div class="meal-card">
+                <div class="meal-title"><i class="fas fa-utensils"></i> Balanced Meal</div>
+                <ul class="meal-items">
+                    <li>150g Salmon/Chicken/Lentils</li>
+                    <li>1 Cup Brown Rice/Quinoa</li>
+                    <li>Large Salad (Spinach, carrots, tomatoes)</li>
+                    <li>1 Bowl Curd (probiotics)</li>
+                </ul>
+            </div>
+
+            <h3>🍵 SNACK (4-5 PM)</h3>
+            <div class="meal-card">
+                <div class="meal-title"><i class="fas fa-apple-alt"></i> Nutrient Boost</div>
+                <ul class="meal-items">
+                    <li>Greek Yogurt + Berries</li>
+                    <li>1 Apple + 10 Walnuts</li>
+                </ul>
+            </div>
+
+            <h3>🌙 DINNER (7-8 PM)</h3>
+            <div class="meal-card">
+                <div class="meal-title"><i class="fas fa-leaf"></i> Light + Anti-inflammatory</div>
+                <ul class="meal-items">
+                    <li>150g Fish/Paneer/Tofu</li>
+                    <li>Steamed Vegetables</li>
+                    <li>1 Small Roti</li>
+                    <li>Turmeric Milk (anti-inflammatory)</li>
+                </ul>
+            </div>
+
+            <h3>🛌 BEFORE BED (9-10 PM)</h3>
+            <div class="meal-card">
+                <div class="meal-title"><i class="fas fa-seedling"></i> DHT Blocker</div>
+                <ul class="meal-items">
+                    <li>1 Spoon Pumpkin Seed Oil</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="caution-box">
+            <h4>❌ Foods to Avoid:</h4>
+            <ul>
+                <li><strong>Sugar/Soda:</strong> Increases DHT by 30%</li>
+                <li><strong>Trans Fats:</strong> Reduces blood flow to follicles</li>
+                <li><strong>Processed Meat:</strong> High in inflammatory compounds</li>
+                <li><strong>Alcohol:</strong> Depletes Zinc + Biotin</li>
+                <li><strong>Caffeine >4 cups/day:</strong> Increases cortisol</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECTION 4: DAILY ROUTINE -->
+    <section id="routine">
+        <span class="section-tag">Part 4</span>
+        <h2 class="section-title">Complete Daily Routine</h2>
+
+        <div class="checklist">
+            <h3>✅ Morning Routine (6-8 AM)</h3>
+            <div class="checklist-item">
+                <input type="checkbox" id="m1">
+                <label for="m1">Drink 500ml water + lemon (hydration)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="m2">
+                <label for="m2">10 min sunlight (Vitamin D)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="m3">
+                <label for="m3">5 min scalp massage (increases blood flow 300%)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="m4">
+                <label for="m4">Apply 5-7 drops BTU Serum to scalp</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="m5">
+                <label for="m5">Healthy breakfast (protein + healthy fats)</label>
+            </div>
+        </div>
+
+        <div class="checklist">
+            <h3>✅ Mid-Day Routine (12-2 PM)</h3>
+            <div class="checklist-item">
+                <input type="checkbox" id="d1">
+                <label for="d1">Anti-inflammatory lunch</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="d2">
+                <label for="d2">10 min walk after meal (blood sugar control)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="d3">
+                <label for="d3">Stay hydrated (2-3L water total)</label>
+            </div>
+        </div>
+
+        <div class="checklist">
+            <h3>✅ Evening Routine (5-7 PM)</h3>
+            <div class="checklist-item">
+                <input type="checkbox" id="e1">
+                <label for="e1">30 min exercise (improves circulation)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="e2">
+                <label for="e2">Stress management (meditation/breathing)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="e3">
+                <label for="e3">Light dinner (2-3 hours before sleep)</label>
+            </div>
+        </div>
+
+        <div class="checklist">
+            <h3>✅ Night Routine (9-11 PM)</h3>
+            <div class="checklist-item">
+                <input type="checkbox" id="n1">
+                <label for="n1">Apply 5-7 drops BTU Serum (night dose)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="n2">
+                <label for="n2">No screens (blue light reduces melatonin)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="n3">
+                <label for="n3">Go to bed by 11 PM</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="n4">
+                <label for="n4">7-9 hours sleep (critical for growth)</label>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: RESULTS TIMELINE -->
+    <section id="timeline">
+        <span class="section-tag">Part 5</span>
+        <h2 class="section-title">Expected Results Timeline</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-month">Week 1-2</div>
+                <h4>Scalp pH Balances</h4>
+                <p>Less itchiness, less dandruff, softer scalp</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-month">Month 1</div>
+                <h4>Shedding Decreases 30%</h4>
+                <p>Less hair in shower/drain, scalp feels healthier</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-month">Month 2</div>
+                <h4>Baby Hairs Visible</h4>
+                <p>Follicles enter growth phase, new hair at hairline</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-month">Month 3</div>
+                <h4>Thickness Increases 20-30%</h4>
+                <p>More volume, hair feels fuller</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-month">Month 4-6</div>
+                <h4>Density Increases 40-60%</h4>
+                <p>Visible fullness, 145% hair growth (clinical data)</p>
+            </div>
+        </div>
+
+        <div class="success-box">
+            <h4>📊 Success Metrics to Track:</h4>
+            <p><strong>1. Hair Shedding:</strong> Count hairs after washing (should decrease 50% by Month 3)<br>
+            <strong>2. Photos:</strong> Take monthly photos (same lighting, angle)<br>
+            <strong>3. Scalp Health:</strong> Itchiness 1-10 scale (should decrease)<br>
+            <strong>4. Hair Strength:</strong> Pull test (gently pull 50 hairs, count broken)</p>
+        </div>
+    </section>
+
+    <!-- SECTION 6: SLEEP -->
+    <section id="sleep">
+        <span class="section-tag">Part 6</span>
+        <h2 class="section-title">Sleep Optimization for Hair Growth</h2>
+
+        <div class="info-card">
+            <h3>😴 Why Sleep is Critical for Hair</h3>
+            <p><strong>Growth Hormone (HGH)</strong> is released ONLY during deep sleep. Poor sleep = no hair growth.</p>
+            <ul>
+                <li><7 hours sleep = 40% higher hair loss risk</li>
+                <li>Best sleep time: 10 PM - 6 AM (aligns with circadian rhythm)</li>
+                <li>Dark room = melatonin production (antioxidant for follicles)</li>
+            </ul>
+        </div>
+
+        <div class="checklist">
+            <h3>✅ Sleep Optimization Checklist</h3>
+            <div class="checklist-item">
+                <input type="checkbox" id="s1">
+                <label for="s1">Go to bed by 10-11 PM</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="s2">
+                <label for="s2">7-9 hours sleep (optimal: 8 hours)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="s3">
+                <label for="s3">Dark room (blackout curtains)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="s4">
+                <label for="s4">No screens 1 hour before bed</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="s5">
+                <label for="s5">Cool room temperature (18-22°C)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="s6">
+                <label for="s6">No heavy meals 3 hours before bed</label>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: STRESS -->
+    <section id="stress">
+        <span class="section-tag">Part 7</span>
+        <h2 class="section-title">Stress Management</h2>
+
+        <div class="info-card">
+            <h3>🧘 Cortisol = Hair Loss</h3>
+            <p><strong>90% of hair loss cases</strong> are stress-related. Ashwagandha in BTU reduces cortisol by 27.9%.</p>
+        </div>
+
+        <div class="checklist">
+            <h3>✅ Daily Stress Management</h3>
+            <div class="checklist-item">
+                <input type="checkbox" id="st1">
+                <label for="st1">Meditation 10-20 min/day (reduces cortisol 20-30%)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="st2">
+                <label for="st2">4-7-8 breathing technique (calms nervous system)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="st3">
+                <label for="st3">30 min exercise (improves circulation + reduces stress)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="st4">
+                <label for="st4">Yoga (Pitta balancing + stress relief)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="st5">
+                <label for="st5">Take breaks (every 2 hours, 5 min walk)</label>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: HARD WATER -->
+    <section id="hardwater">
+        <span class="section-tag">Part 8</span>
+        <h2 class="section-title">Hard Water Solution</h2>
+
+        <div class="info-card">
+            <h3>💧 Bengaluru Hard Water = 300-400 ppm</h3>
+            <p><strong>Phytic Acid</strong> in BTU removes calcium/magnesium buildup from hard water.</p>
+        </div>
+
+        <div class="checklist">
+            <h3>✅ Hard Water Protection</h3>
+            <div class="checklist-item">
+                <input type="checkbox" id="hw1">
+                <label for="hw1">Install water softener filter (₹2,000-5,000)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="hw2">
+                <label for="hw2">Use lukewarm water (not hot)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="hw3">
+                <label for="hw3">Final rinse with filtered/RO water</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="hw4">
+                <label for="hw4">Apply BTU Serum (Phytic Acid chelates minerals)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="hw5">
+                <label for="hw5">Use chelating shampoo once weekly</label>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>🌟 Thank You for Choosing BTU</h3>
+        <p style="font-size: 1.2em; margin-bottom: 20px;">Consistency is key. Follow this guide daily for best results.</p>
+        
+        <div class="contact-info">
+            <a href="https://instagram.com/btu_official"><i class="fab fa-instagram"></i></a>
+            <a href="https://whatsapp.com/btu_official"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com/btu_official"><i class="fab fa-twitter"></i></a>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.9em;">
+            © 2026 BTU Scalp Care Serum<br>
+            11 Clinical + Ayurvedic Actives | Made for India
+        </p>
+        <p style="font-size: 0.85em; margin-top: 15px;">
+            Questions? WhatsApp us: +91-XXXXX-XXXXX
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for tabs
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Active tab highlighting
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.getAttribute('href') === '#' + current) {
+                    tab.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
